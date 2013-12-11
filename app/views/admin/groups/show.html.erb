@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @admin_group.name %>
+</p>
+
+<%= test_admin_group_path(test: @admin_group.name) %> |
+<%= test_admin_group_path(@admin_group.name) %> |
+
+
+
+<%= link_to 'Edit', edit_admin_group_path(@admin_group) %> |
+<%= link_to 'Back', admin_group_path %>
